@@ -74,7 +74,6 @@ function createMap(data) {
     var colorSet = new am4core.ColorSet()
 
     const els = data.map((el) => {
-      console.log(el)
       return {
         title: el.name,
         latitude: el.latlng[0],
