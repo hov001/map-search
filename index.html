@@ -12,7 +12,34 @@
   </head>
   <body>
     <section class="wrapper">
-      <div class="wrapper__row"></div>
+      <div class="wrapper__row">
+        <!-- Map section -->
+        <div class="wrapper__map-section">
+          <div id="chartdiv"></div>
+        </div>
+        <!-- Map section end -->
+        <!-- Info section -->
+        <div class="wrapper__info-section"></div>
+        <!-- Info section end -->
+      </div>
     </section>
+
+    <!-- Map chart resources -->
+    <script defer src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script defer src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+    <script
+      defer
+      src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.amcharts.com/lib/4/themes/spiritedaway.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.amcharts.com/lib/4/themes/animated.js"
+    ></script>
+    <script defer src="./src/scripts/map.js"></script>
+    <script defer src="./src/scripts/responseApi.js"></script>
   </body>
 </html>

@@ -3,6 +3,7 @@
 body {
   font-family: 'Nunito', sans-serif;
   outline: none;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -15,9 +16,32 @@ body {
 }
 
 .wrapper__row {
-  width: 85%;
-  min-height: 150px;
+  width: 65%;
+  height: max-content;
   background-color: #fff;
   box-shadow: 0 0 35px #a7a6a6;
-  border-radius: 50px;
+  border-radius: 35px;
+  display: flex;
+  padding: 30px;
+}
+
+.wrapper__map-section,
+.wrapper__info-section {
+  height: 100%;
+}
+
+.wrapper__map-section {
+  width: 70%;
+  height: 500px;
+}
+
+#chartdiv {
+  width: 95%;
+  height: 100%;
+}
+
+.wrapper__info-section {
+  width: 30%;
+  height: 300px;
+  background-color: aqua;
 }
