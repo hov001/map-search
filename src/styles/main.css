@@ -43,5 +43,14 @@ body {
 .wrapper__info-section {
   width: 30%;
   height: 300px;
-  background-color: aqua;
+}
+
+#search {
+  outline: none;
+  width: 80%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  padding: 0 10px;
+  font-size: 12px;
 }
