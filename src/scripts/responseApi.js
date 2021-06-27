@@ -13,4 +13,7 @@ function fetchFunc(url, response = '') {
       createItems(data)
       createMap(data)
     })
+    .catch((err) => {
+      console.log(err)
+    })
 }
