@@ -1,0 +1,52 @@
+.countries-list {
+  width: 100%;
+  height: 90%;
+  margin-top: 20px;
+  padding-right: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.counties-list__item {
+  width: 100%;
+  height: max-content;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.counties-list__item > .item__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+}
+
+.counties-list__item .item__title__name {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.counties-list__item .item__title__name img {
+  width: 27px;
+  height: 18px;
+}
+
+.counties-list__item .item__title__name h3 {
+  margin-left: 10px;
+}
+
+.counties-list__item .item__title__name h3 > a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+.counties-list__item .item__title__name h3 > a:hover {
+  color: #5e5d5d;
+}

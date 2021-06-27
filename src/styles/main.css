@@ -1,9 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-body {
-  font-family: 'Nunito', sans-serif;
+@import './list-style.css';
+
+* {
   outline: none;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .wrapper {
@@ -16,8 +41,8 @@ body {
 }
 
 .wrapper__row {
-  width: 65%;
-  height: max-content;
+  width: 945px;
+  height: 522px;
   background-color: #fff;
   box-shadow: 0 0 35px #a7a6a6;
   border-radius: 35px;
@@ -37,12 +62,12 @@ body {
 
 #chart-div {
   width: 95%;
-  height: 100%;
+  height: 92%;
 }
 
 .wrapper__info-section {
   width: 30%;
-  height: 300px;
+  height: 100%;
 }
 
 #search {
