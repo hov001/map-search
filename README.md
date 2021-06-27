@@ -1,4 +1,4 @@
-# **ARRAY METHODS**
+# **SEARCH COUNTRIES**
 
 ## Source map
 
