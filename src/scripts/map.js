@@ -1,5 +1,7 @@
+const chartId = 'chart-div'
+
 function createMap(data) {
-  document.getElementById('chartdiv').innerHTML = ''
+  document.getElementById('chart-div').innerHTML = ''
   am4core.ready(function () {
     // Themes begin
     am4core.useTheme(am4themes_spiritedaway)
@@ -7,7 +9,7 @@ function createMap(data) {
     // Themes end
 
     // Create map instance
-    var chart = am4core.create('chartdiv', am4maps.MapChart)
+    var chart = am4core.create('chart-div', am4maps.MapChart)
 
     // Set map definition
     chart.geodata = am4geodata_worldLow
