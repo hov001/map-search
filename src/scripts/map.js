@@ -16,7 +16,6 @@ function createMap(data) {
 
     // Set projection
     chart.projection = new am4maps.projections.Miller()
-
     // Create map polygon series
     var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries())
 
@@ -45,7 +44,7 @@ function createMap(data) {
     var circle = imageSeries.mapImages.template.createChild(am4core.Circle)
     circle.radius = 3
     circle.propertyFields.fill = 'color'
-    circle.nonScaling = false
+    circle.nonScaling = true
 
     var circle2 = imageSeries.mapImages.template.createChild(am4core.Circle)
     circle2.radius = 3
