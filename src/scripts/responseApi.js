@@ -12,11 +12,19 @@ function fetchFunc(url, response = '') {
     '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>'
 
   fetch(url + response)
-    .then((response) => response.json())
+    .then((response) => {
+      if (response.ok) {
+        return response.json()
+      } else {
+        mapSection.textContent = 'Not found'
+        wrapperItems.textContent = ''
+      }
+    })
     .then((data) => {
-      console.log(data)
-      createItems(data)
-      createMap(data)
+      if (data !== undefined) {
+        createItems(data)
+        createMap(data)
+      }
     })
     .catch((err) => {
       console.log(err)
